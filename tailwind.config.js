@@ -3,8 +3,8 @@ export const content = ["./src/**/*.{html,js,vue,ts}"]
 export const theme = {
   extend: {
     colors: {
-      'white': 'var(--vt-c-white)',
-      'black': 'var(--vt-c-black)',
+      white: 'var(--vt-c-white)',
+      black: 'var(--vt-c-black)',
     }
   }
 }
