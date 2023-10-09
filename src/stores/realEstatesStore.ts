@@ -11,7 +11,7 @@ export const useRealEstatesStore = defineStore('realEstates', {
     properties: [] as Property[],
     viewBounds: undefined as LatLngBounds | undefined,
     dataLoaded: false,
-    currentSlide: 0,
+    selectedProperty: null as Property | null,
   }),
   actions: {
     async fetchData() {
@@ -58,9 +58,10 @@ export const useRealEstatesStore = defineStore('realEstates', {
       return text.substring(0, maxCharacters) + '...';
     },
 
-    onCarouselChange(newSlideIndex: number) {
-      this.currentSlide = newSlideIndex;
+    openMarkerPopup(property: Property) {
+      this.selectedProperty = property;
     },
+
   },
 });
 

@@ -7,4 +7,5 @@ export interface Property {
   description: string;
   price: number;
   pictures: string[];
+  currentSlide: number;
 }
