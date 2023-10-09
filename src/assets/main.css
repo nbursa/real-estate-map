@@ -13,7 +13,6 @@
 }
 
 .truncate-text {
-  /* max-height: 8em; */
   white-space: wrap;
   overflow: hidden;
   text-overflow: ellipsis;

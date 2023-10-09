@@ -52,7 +52,6 @@ const calculateZoom = () => {
 
 const openMarkerPopup = (property: any) => {
   store.selectedProperty = property;
-  console.log("store.selectedProperty: ", store.selectedProperty);
 };
 
 onMounted(async () => {
@@ -70,7 +69,5 @@ watch(() => store.dataLoaded, (loaded) => {
     calculateZoom();
   }
 }, { immediate: true });
-
-console.log('Setup function executed', zoom.value);
 </script>
 
