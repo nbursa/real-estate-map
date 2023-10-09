@@ -11,3 +11,15 @@
   overflow: hidden;
   font-weight: normal;
 }
+
+.truncate-text {
+  /* max-height: 8em; */
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom-marker {
+  display: block !important;
+  z-index: 100;
+}
