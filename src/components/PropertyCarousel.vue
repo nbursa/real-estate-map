@@ -20,10 +20,8 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 console.log("loading carousel")
 const props = defineProps(['property'])
-// const carousels = ref<Array<number>>([]);
 
 const currentSlide = ref<number>(0);
-// const currentCarouselIndex = ref<number>(0);
 
 const onCarouselChange = (newSlideIndex: number) => {
     console.log("onCarouselChange: ", newSlideIndex);

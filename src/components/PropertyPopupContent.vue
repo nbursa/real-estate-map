@@ -22,9 +22,6 @@ const store = useRealEstatesStore();
 const props = defineProps(['property']);
 const selectedProperty = computed(() => store.selectedProperty);
 
-console.log('Selected Property ID:', selectedProperty.value?.id);
-console.log('Current Property ID:', props.property.id);
-
 const isFullDescription = ref(false);
 
 const descriptionDisplay = computed(() => {

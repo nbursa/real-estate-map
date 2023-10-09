@@ -28,9 +28,6 @@ import { useRealEstatesStore } from '../stores/realEstatesStore';
 import { LMap, LTileLayer, LMarker, LTooltip, LPopup, LIcon } from "@vue-leaflet/vue-leaflet";
 import { ref, onMounted, watch } from 'vue';
 import PropertyPopupContent from './PropertyPopupContent.vue';
-// import { defineEmits } from 'vue';
-
-// const emits = defineEmits();
 
 const store = useRealEstatesStore();
 
@@ -56,7 +53,6 @@ const calculateZoom = () => {
 const openMarkerPopup = (property: any) => {
   store.selectedProperty = property;
   console.log("store.selectedProperty: ", store.selectedProperty);
-  // emits('openPopup');
 };
 
 onMounted(async () => {
