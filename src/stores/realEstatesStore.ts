@@ -16,7 +16,8 @@ export const useRealEstatesStore = defineStore('realEstates', {
   actions: {
     async fetchData() {
       try {
-        const response = await axios.get('https://blattcodeservices.com/pct/search');
+        const URL = import.meta.env.VITE_API_URL;
+        const response = await axios.get(URL);
         this.properties = response.data.publications.map((property: any) => {
           const coordinates: LatLngExpression = [
             property.address.coordinates.latitude,
