@@ -17,8 +17,3 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-.custom-marker {
-  display: block !important;
-  z-index: 100;
-}
