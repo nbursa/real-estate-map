@@ -1,6 +1,5 @@
 <template>
-    <property-carousel :property="props.property" :key="props.property.id"
-        v-if="selectedProperty && props.property.id === selectedProperty.id" />
+    <property-carousel :property="props.property" v-if="selectedProperty && props.property.id === selectedProperty.id" />
 
     <h2 class="text-xl font-bold mt-2">
         {{ props.property.title }}
