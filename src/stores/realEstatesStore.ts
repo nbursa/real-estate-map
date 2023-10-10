@@ -6,7 +6,7 @@ import { nextTick } from 'vue';
 
 export const useRealEstatesStore = defineStore('realEstates', {
   state: () => ({
-    zoom: 16,
+    zoom: 14,
     center: [47.3769, 8.5417] as PointExpression,
     properties: [] as Property[],
     viewBounds: undefined as LatLngBounds | undefined,
